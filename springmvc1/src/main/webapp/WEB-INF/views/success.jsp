@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-Hello,World! 用户名：${name},密码：${password}
+Hello,World! 读取后台传值name=${name},password=${password}
 </body>
 </html>

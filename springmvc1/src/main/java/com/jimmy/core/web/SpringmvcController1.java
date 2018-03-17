@@ -24,10 +24,8 @@ import com.jimmy.core.dto.UserDto;
  * @author Jimmy.Fang
  * @date 2018年3月15日  新建  
  */
-@Controller
-//表示当前类是一个controller
-@RequestMapping("/order") 
-//类定义处未标注 @RequestMapping,则方法处标记的 URL 相对于WEB 应用的根目录,一般定义的是一个模块的别名
+@Controller //把一个普通类变成controller
+@RequestMapping("/order") //类定义处未标注 @RequestMapping,则方法处标记的 URL 相对于WEB 应用的根目录,一般定义的是一个模块的别名
 public class SpringmvcController1 {
 	
 	/**
@@ -35,7 +33,7 @@ public class SpringmvcController1 {
 	 * @param id
 	 * @return
 	 */
-	@RequestMapping(value="/findById",method=RequestMethod.GET) 
+	@RequestMapping(value="/getOrderById",method=RequestMethod.GET) 
 	public String getOrderById(int id){
 		System.out.println(1);
 		return "success";

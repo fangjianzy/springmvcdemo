@@ -44,12 +44,5 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
     
-    <!-- 另一种配置是修改web-app_2_3.dtd 为更高版本，不然jsp中el表达式失效 -->
-    <jsp-config>
-	    <jsp-property-group>
-	        <url-pattern>*.jsp</url-pattern>
-	        <el-ignored>false</el-ignored>
-	        <scripting-invalid>true</scripting-invalid>
-	    </jsp-property-group>
-	</jsp-config>
+ 
 </web-app>
